@@ -1,0 +1,11 @@
+cactus:
+  plugins:
+    - type: "@hyperledger/cactus-plugin-ledger-connector-ethereum"
+      instanceId: "traffic-ledger-connector"
+      rpcEndpoint: "http://127.0.0.1:7545"  # Ganache endpoint for both
+      ethAccount: "0xBfC7b736cbF9084CD024B2a64e0A7CfB8ba78260" # Replace with Traffic blockchain account address in Ganache
+
+    - type: "@hyperledger/cactus-plugin-ledger-connector-ethereum"
+      instanceId: "hospital-ledger-connector"
+      rpcEndpoint: "http://127.0.0.1:7545"  # Same Ganache endpoint
+      ethAccount: "0xA990779959aDebE5061702819809453DFD526101" # Replace with Hospital blockchain account address in Ganache
